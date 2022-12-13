@@ -4,7 +4,7 @@
 package main
 
 import (
-	"megaproaktiv/orphan/cmd"
+	"github.com/megaproaktiv/orphan/cmd"
 )		
 
 
