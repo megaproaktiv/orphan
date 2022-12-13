@@ -11,7 +11,7 @@ import (
 var rootCmd = &cobra.Command{
     Use:   "orphan",
     Short: "Delete orphaned log groups from AWS Lambda",
-    Long:  `Any log group named /aws/lambda/$name wich has no Lambda function $name will be deleted`,
+    Long:  `Any log group named /aws/lambda/$name which has no Lambda function $name will be deleted`,
     // Uncomment the following line if your bare application
     // has an action associated with it:
     // Run: func(cmd *cobra.Command, args []string) { },
