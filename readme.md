@@ -1,6 +1,6 @@
 # Delete orphaned AWS Lambda Log Groups
 
-Checks whether all Log Groups "/aws/lambda/$name"  have a Lambda Function $name.
+Checks whether all Log Groups "/aws/lambda/name"  have a Lambda Function $name.
 
 ## Call
 
