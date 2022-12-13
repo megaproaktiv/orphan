@@ -4,9 +4,8 @@ package cmd
 
 import (
 	"fmt"
-	"orphan"
 	"os"
-
+	"github.com/megaproaktiv/orphan/groups"
 	"github.com/spf13/cobra"
 )
 
@@ -19,7 +18,7 @@ var rootCmd = &cobra.Command{
     // has an action associated with it:
     // Run: func(cmd *cobra.Command, args []string) { },
 	Run: func(cmd *cobra.Command, args []string) {
-		orphaned,err := orphan.ListOrphans(orphan.ClientLambda, orphan.ClientLogs)
+		orphaned,err := groups.ListOrphans(groups.ClientLambda, groups.ClientLogs)
 		if err != nil{
 			panic(err)
 		}
@@ -29,7 +28,7 @@ var rootCmd = &cobra.Command{
 		}
 		for _, group := range orphaned {
 			if killthem {
-				orphan.DeleteLogGroup(*orphan.ClientLogs, group)
+				groups.DeleteLogGroup(*groups.ClientLogs, group)
 				fmt.Printf("Deleted: %v \n", *group)
 			}else {
 				fmt.Printf("%v \n", *group)

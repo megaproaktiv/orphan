@@ -1,14 +1,11 @@
 /*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 
 */
 package main
 
 import (
-	"orphan/cmd"
+	"megaproaktiv/orphan/cmd"
 )		
-
-
 
 
 func main() {
