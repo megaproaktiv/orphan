@@ -3,6 +3,7 @@ package groups
 import (
 	"context"
 	"log"
+	"reflect"
 	"strings"
 
 	"github.com/aws/aws-sdk-go-v2/config"
@@ -50,27 +51,44 @@ func ListOrphans(clientLambda *lambda.Client, clientLogs *cloudwatchlogs.Client)
 		lambdaMap["/aws/lambda/"+*i.FunctionName] = *i.FunctionName
 	}
 
-	// Range logs
-	// limit: Valid Range: Minimum value of 1. Maximum value of 50.
-	respLogs, err := clientLogs.DescribeLogGroups(context.TODO(),nil)
-	if err != nil{
-		log.Println("Error calling cloudwatchlogs")
-		return nil, err
-	}
-	// Token is just the name of the last group
-	//fmt.Printf("Token: <%v>\n", *respLogs.NextToken)
-	for _, i := range respLogs.LogGroups {
-		logGroupName := *i.LogGroupName
-		if !strings.HasPrefix(logGroupName, "/aws/lambda") {
-			continue
+	counter := 1
+	const maxCount = 1000
+	params := cloudwatchlogs.DescribeLogGroupsInput{}
+	for{
+		counter++
+		// Range logs
+		// limit: Valid Range: Minimum value of 1. Maximum value of 50.
+		respLogs, err := clientLogs.DescribeLogGroups(context.TODO(),&params)
+		if err != nil{
+			log.Println("Error calling cloudwatchlogs")
+			return nil, err
 		}
-		_, isMapContainsKey := lambdaMap[logGroupName]
-		if ! isMapContainsKey {
-			// fmt.Printf("Found orphan: %v \n", logGroupName)
-			
-			// fmt.Printf("Delete log group: %v", logGroupName)
-			orphans = append(orphans, &logGroupName)
+		// Token is just the name of the last group
+		//fmt.Printf("Token: <%v>\n", *respLogs.NextToken)
+		for _, i := range respLogs.LogGroups {
+			logGroupName := *i.LogGroupName
+			if !strings.HasPrefix(logGroupName, "/aws/lambda") {
+				continue
+			}
+			_, isMapContainsKey := lambdaMap[logGroupName]
+			if ! isMapContainsKey {
+				// fmt.Printf("Found orphan: %v \n", logGroupName)
+				
+				// fmt.Printf("Delete log group: %v", logGroupName)
+				orphans = append(orphans, &logGroupName)
+			}
 		}
+		if counter > maxCount {
+			break
+		}
+		if isNil(respLogs.NextToken) {
+			break
+		}
+		params.NextToken = respLogs.NextToken
 	}
 	return orphans, nil
 }	
+
+func isNil(i interface{}) bool {
+	return i == nil || reflect.ValueOf(i).IsNil()
+ }

@@ -21,6 +21,9 @@ func TestListOrphans(t *testing.T){
 	DescribeLogGroupsFunc := func(ctx context.Context, params *cloudwatchlogs.DescribeLogGroupsInput) (*cloudwatchlogs.DescribeLogGroupsOutput, error) {		
 		testfile := "../testdata/loggroups-1-50.json"
 		data, err := os.ReadFile(testfile)
+		if counter == 1 {
+			assert.Equal(t, len(*params.NextToken) > 0 , true)
+		}
 		if err != nil {
 			fmt.Println("File reading error: ", err)
 		}		
@@ -54,6 +57,6 @@ func TestListOrphans(t *testing.T){
 	clientLambda := lambda.NewFromConfig(mockCfg.AwsConfig())
 	list, err := groups.ListOrphans(clientLambda, clientLogs)
 	assert.NilError(t, err, "ListOrphans should return no error")
-	assert.Equal(t, len(list), 50, "Length should be 50")
+	assert.Equal(t, len(list), 100, "Length should be 100")
 	assert.Equal(t, counter, 2, "Describefunction should be called twice")
 }
