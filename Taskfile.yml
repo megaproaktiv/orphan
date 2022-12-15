@@ -1,0 +1,18 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  init:
+    desc: Go Tools install
+    cmd:
+      -  go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow  
+  test:
+    desc: test & vetvet
+    cmds:
+      - go vet ./...
+      - shadow ./...
+      - go test ./...

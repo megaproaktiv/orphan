@@ -1,0 +1,354 @@
+{
+    "logGroups": [
+        {
+            "logGroupName": "/aws/lambda/testgroup-0-0",
+            "creationTime": 1671121440399,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-0-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-0-6",
+            "creationTime": 1671121437859,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-0-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-0-7",
+            "creationTime": 1671121438488,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-0-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-0-8",
+            "creationTime": 1671121439130,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-0-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-0-9",
+            "creationTime": 1671121439774,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-0-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-1-0",
+            "creationTime": 1671121443540,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-1-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-1-6",
+            "creationTime": 1671121441038,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-1-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-1-7",
+            "creationTime": 1671121441674,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-1-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-1-8",
+            "creationTime": 1671121442300,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-1-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-1-9",
+            "creationTime": 1671121442919,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-1-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-2-0",
+            "creationTime": 1671121446629,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-2-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-2-6",
+            "creationTime": 1671121444161,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-2-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-2-7",
+            "creationTime": 1671121444783,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-2-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-2-8",
+            "creationTime": 1671121445401,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-2-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-2-9",
+            "creationTime": 1671121446015,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-2-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-3-0",
+            "creationTime": 1671121449782,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-3-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-3-6",
+            "creationTime": 1671121447241,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-3-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-3-7",
+            "creationTime": 1671121447895,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-3-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-3-8",
+            "creationTime": 1671121448524,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-3-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-3-9",
+            "creationTime": 1671121449160,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-3-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-4-0",
+            "creationTime": 1671121452923,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-4-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-4-6",
+            "creationTime": 1671121450399,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-4-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-4-7",
+            "creationTime": 1671121451066,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-4-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-4-8",
+            "creationTime": 1671121451689,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-4-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-4-9",
+            "creationTime": 1671121452306,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-4-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-5-0",
+            "creationTime": 1671121456011,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-5-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-5-6",
+            "creationTime": 1671121453543,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-5-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-5-7",
+            "creationTime": 1671121454163,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-5-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-5-8",
+            "creationTime": 1671121454775,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-5-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-5-9",
+            "creationTime": 1671121455393,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-5-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-6-0",
+            "creationTime": 1671121459080,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-6-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-6-6",
+            "creationTime": 1671121456631,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-6-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-6-7",
+            "creationTime": 1671121457248,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-6-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-6-8",
+            "creationTime": 1671121457854,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-6-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-6-9",
+            "creationTime": 1671121458462,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-6-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-7-0",
+            "creationTime": 1671121462181,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-7-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-7-6",
+            "creationTime": 1671121459697,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-7-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-7-7",
+            "creationTime": 1671121460327,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-7-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-7-8",
+            "creationTime": 1671121460949,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-7-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-7-9",
+            "creationTime": 1671121461566,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-7-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-8-0",
+            "creationTime": 1671121465271,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-8-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-8-6",
+            "creationTime": 1671121462795,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-8-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-8-7",
+            "creationTime": 1671121463414,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-8-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-8-8",
+            "creationTime": 1671121464021,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-8-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-8-9",
+            "creationTime": 1671121464640,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-8-9:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-9-0",
+            "creationTime": 1671121468522,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-9-0:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-9-6",
+            "creationTime": 1671121465902,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-9-6:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-9-7",
+            "creationTime": 1671121466523,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-9-7:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-9-8",
+            "creationTime": 1671121467263,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-9-8:*",
+            "storedBytes": 0
+        },
+        {
+            "logGroupName": "/aws/lambda/testgroup-9-9",
+            "creationTime": 1671121467909,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:eu-central-1:139008737997:log-group:/aws/lambda/testgroup-9-9:*",
+            "storedBytes": 0
+        }
+    ]
+}

@@ -51,11 +51,14 @@ func ListOrphans(clientLambda *lambda.Client, clientLogs *cloudwatchlogs.Client)
 	}
 
 	// Range logs
+	// limit: Valid Range: Minimum value of 1. Maximum value of 50.
 	respLogs, err := clientLogs.DescribeLogGroups(context.TODO(),nil)
 	if err != nil{
 		log.Println("Error calling cloudwatchlogs")
 		return nil, err
 	}
+	// Token is just the name of the last group
+	//fmt.Printf("Token: <%v>\n", *respLogs.NextToken)
 	for _, i := range respLogs.LogGroups {
 		logGroupName := *i.LogGroupName
 		if !strings.HasPrefix(logGroupName, "/aws/lambda") {
