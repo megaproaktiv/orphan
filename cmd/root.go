@@ -33,7 +33,7 @@ var rootCmd = &cobra.Command{
 			}
 		}
 		if len(orphaned) == 0 {
-			fmt.Printf("All clearn, no orphans found.\n")
+			fmt.Printf("All clear, no orphans found.\n")
 		}
 	},
 }

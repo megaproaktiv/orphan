@@ -40,19 +40,31 @@ func DeleteLogGroup( client cloudwatchlogs.Client, logGroupName *string){
 // todo paginate
 // Get all log groups with corresponding Lambda Function
 func ListOrphans(clientLambda *lambda.Client, clientLogs *cloudwatchlogs.Client) ([] *string, error){
+	const maxCount = 1000
+
 	orphans := make([]*string, 0,100)
 	lambdaMap := map[string]string{}
-	resp, err := clientLambda.ListFunctions(context.TODO(), nil)
-	if err != nil{
-		log.Println("Error calling lambda")
-		panic(err)
-	}
-	for _, i := range resp.Functions {
-		lambdaMap["/aws/lambda/"+*i.FunctionName] = *i.FunctionName
+	counter := 1
+	paramsLambda := lambda.ListFunctionsInput{}
+	for {
+		resp, err := clientLambda.ListFunctions(context.TODO(), &paramsLambda)
+		if err != nil{
+			log.Println("Error calling lambda")
+			panic(err)
+		}
+		for _, i := range resp.Functions {
+			lambdaMap["/aws/lambda/"+*i.FunctionName] = *i.FunctionName
+		}
+		if counter > maxCount {
+			break
+		}
+		if isNil(resp.NextMarker) {
+			break
+		}
+		paramsLambda.Marker = resp.NextMarker
 	}
 
-	counter := 1
-	const maxCount = 1000
+	counter = 1
 	params := cloudwatchlogs.DescribeLogGroupsInput{}
 	for{
 		counter++
@@ -73,7 +85,6 @@ func ListOrphans(clientLambda *lambda.Client, clientLogs *cloudwatchlogs.Client)
 			_, isMapContainsKey := lambdaMap[logGroupName]
 			if ! isMapContainsKey {
 				// fmt.Printf("Found orphan: %v \n", logGroupName)
-				
 				// fmt.Printf("Delete log group: %v", logGroupName)
 				orphans = append(orphans, &logGroupName)
 			}
